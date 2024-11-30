@@ -21,7 +21,7 @@ function crackCookie() {
 
 function fetchFortune(fortuneText) {
     fetch('/get_fortune')
-    .then(response => response.text()) // Change to .text() for plain text response
+    .then(response => response.text())
     .then(quote => {
         const fortuneText = document.getElementById('fortune-text');
         fortuneText.textContent = quote;
