@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Fortune Cookie Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fortune Cookie Generator</h1>
+        <h2>Click on the cookie to get a message!</h2>
+        <div id="cookie-container">
+            <img id="cookie" src="/static/fortune_cookie.png" alt="Fortune Cookie" onclick="crackCookie()">
+            <img id="cracked" src="/static/cracked_cookie.png" alt="Cracked Cookie" style="display:none;">
+            <div id="fortune-text"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
