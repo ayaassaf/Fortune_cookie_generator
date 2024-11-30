@@ -57,8 +57,25 @@ h2 {
     line-height: 1.2;
 }
 
-
 #cookie:active {
     transform: rotate(10deg);
+}
+
+#return-btn {
+    display: block;
+    position: relative;
+    margin: -50px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #d35400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button-container {
+    text-align: center;
+    margin-top: 10px;
 }
 
