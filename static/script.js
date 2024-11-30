@@ -2,6 +2,7 @@ function crackCookie() {
     const cookie = document.getElementById('cookie');
     const cracked = document.getElementById('cracked');
     const fortuneText = document.getElementById('fortune-text');
+    const returnBtn = document.getElementById('return-btn');
 
     // Add a shake effect
     cookie.style.transform = 'rotate(20deg)';
@@ -14,6 +15,7 @@ function crackCookie() {
         cookie.style.display = 'none';
         cracked.style.display = 'block';
         fetchFortune(fortuneText);
+        returnBtn.style.display = 'block';
     }, 400);
 }
 
@@ -32,3 +34,9 @@ function fetchFortune(fortuneText) {
         fortuneText.style.display = 'block';
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('return-btn').addEventListener('click', () => {
+        window.location.reload();
+    });
+});
