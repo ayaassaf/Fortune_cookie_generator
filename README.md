@@ -15,8 +15,7 @@ A Flask web application that displays random fortunes to users. The fortunes are
 ---
 
 ## To install Flask, run:
- -```bash
- - pip install Flask
+    pip install Flask
 
 ---
 
